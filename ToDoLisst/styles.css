@@ -13,6 +13,15 @@ body{
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute; /* or relative/fixed/sticky */
+    top: 50px;   /* 50px from the top of the parent */
+    left: 100px; /* 100px from the left of the parent */
+
+}
+.display{
+    position: absolute;
+    top : 50px;   /* 50px from the top of the parent */
+    left: 700px; /* 150px from the left of the parent */
 }
 h1{
     color: #333;
@@ -41,7 +50,7 @@ input{
 }
 
 .delete_btn , .complete_btn{
-    padding: 10px 20px;
+    padding: 6px 5px;
     font-size: 1em;
     margin: 0 10px;
     border: 2px solid #007BFF;
