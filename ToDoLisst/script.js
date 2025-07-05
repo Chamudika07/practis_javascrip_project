@@ -1,7 +1,9 @@
 const new_todo_input = document.getElementById("new_todo_input");
 const add_todo_button = document.getElementById("add_todo_button")
 const listtask_list = document.getElementById("task_list");
-
+const user_name_input = document.getElementById("user_name_input");
+const start_button = document.getElementById("start_button");
+const demo = document.getElementById("demo");
 // Array to store tasks (objects for more properties like 'completed')
 let tasks = []; // { text: "Learn JS", completed: false }
 
@@ -67,3 +69,13 @@ function deleteTask(index) {
 }
 
 renderTasks(); // // Initial render (in case you want to load from local storage later)
+
+start_button.addEventListener("click", () => {
+    const userName = user_name_input.value.trim();
+    if (userName !== "") {
+        demo.textContent = `Welcome, ${userName}! `;
+        user_name_input.value = ""; // Clear the input field
+    } else {
+        alert("Please enter your name.");
+    }
+});

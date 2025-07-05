@@ -20,7 +20,7 @@ body{
 }
 .display{
     position: absolute;
-    top : 50px;   /* 50px from the top of the parent */
+    top : 400px;   /* 50px from the top of the parent */
     left: 700px; /* 150px from the left of the parent */
 }
 
