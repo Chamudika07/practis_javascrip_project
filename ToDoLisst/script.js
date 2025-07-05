@@ -49,7 +49,21 @@ function renderTasks() {
         taskItem.appendChild(completeButton);
         taskItem.appendChild(deleteButton);
         task_list.appendChild(taskItem); // Append the task item to the task list
-    })
-
-
+    });
 }
+
+// Function to toggle task completion
+function toggleComplete(index){
+    tasks[index].completed = !tasks[index].completed; // Toggle the completed status
+    console.log("Task " + index + " completion status: " + tasks[index].completed); // Debugging
+    renderTasks(); // Re-render the task list
+}
+
+// Function to delete a task
+function deleteTask(index) {
+    tasks.splice(index , 1)  ; // Remove the task from the array
+    console.log("Task " + index + " deleted."); // Debugging
+    renderTasks(); // Re-render the task list
+}
+
+renderTasks(); // // Initial render (in case you want to load from local storage later)
