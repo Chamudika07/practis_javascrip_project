@@ -5,7 +5,7 @@ body{
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #a17bba;
+    background-color: #b9b1bd;
 }
 .container{
     text-align: center;
@@ -14,7 +14,7 @@ body{
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: absolute; /* or relative/fixed/sticky */
-    top: 50px;   /* 50px from the top of the parent */
+    top: 400px;   /* 50px from the top of the parent */
     left: 100px; /* 100px from the left of the parent */
 
 }
@@ -23,6 +23,7 @@ body{
     top : 50px;   /* 50px from the top of the parent */
     left: 700px; /* 150px from the left of the parent */
 }
+
 h1{
     color: #333;
     font-size: 3em;
@@ -83,4 +84,19 @@ input{
 #task_list li.completed{
     text-decoration: line-through;
     color: #999;
+}
+
+.get_user{
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 0 10px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(2, 2, 2);
+    color: white;
+    transition: background-color 0.3s, ease-in-out;
+    position: absolute; /* or relative/fixed/sticky */
+    top: 100px;   /* 50px from the top of the parent */
+    left: 325px; /* 100px from the left of the parent */
 }
