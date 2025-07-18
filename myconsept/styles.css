@@ -1,0 +1,46 @@
+/* Style the container, quote text, author, and button */
+.container{
+    text-align: center;
+    background-color: wheat;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#quote_dispaly {
+    min-height: 150px; /* Give it some height for content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+#quote_text{
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+#quote_author {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #555;
+}
+#new_quote_btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#new_quote_btn:hover {
+    background-color: #0056b3;
+}
