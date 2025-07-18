@@ -19,9 +19,19 @@ async function getNewQuote() {
         quote_text.textContent = `"${data.content}"`
         quote_author.textContent = `-${data.author}`;
     }
-    catch (error){
+    catch (error) {
         console.error('Error fetching quote:', error);
-        quote_text.textContent = 'Failed to load quote.';
+        if (error.name === 'TypeError') {
+            quote_text.textContent = 'Network error. Check your internet connection.';
+        } else {
+            quote_text.textContent = 'Failed to load quote.';
+        }
         quote_author.textContent = '';
     }
+
 }
+
+new_quote_btn.addEventListener('click', getNewQuote);
+
+// Get an initial quote when the page loads
+getNewQuote();
